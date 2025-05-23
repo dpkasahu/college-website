@@ -8,7 +8,7 @@ function App() {
       <Navbar />
       <header
         className="header"
-        style={{ backgroundImage: "url('/dome-bg.jpg')" }}
+        //style={{ backgroundImage: "url('/dome-bg.jpg')" }}
       >
         <h1>We Ensure better education <br /> for a better world</h1>
         <p>
