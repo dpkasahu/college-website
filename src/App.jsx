@@ -1,25 +1,28 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import './style.css';
+import Home from './pages/Home';
+import About from './pages/About';
+// import Academics from './pages/Academics';
+// import Admissions from './pages/Admissions';
+// import CampusLife from './pages/CampusLife';
+// import Give from './pages/Give';
+// import Apply from './pages/Apply';
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <header
-        className="header"
-        style={{ backgroundImage: "url('/dome-bg.jpg')" }}
-      >
-        <h1>We Ensure better education <br /> for a better world</h1>
-        <p>
-          Our cutting-edge curriculum is designed to empower students with the knowledge, skills, and
-          experiences needed to excel in the dynamic field of education
-        </p>
-        <button className="header-button">
-          Explore more
-        </button>
-      </header>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/academics" element={<Academics />} />
+        <Route path="/admissions" element={<Admissions />} />
+        <Route path="/campus-life" element={<CampusLife />} />
+        <Route path="/give" element={<Give />} />
+        <Route path="/apply" element={<Apply />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

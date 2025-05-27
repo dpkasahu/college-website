@@ -1,0 +1,98 @@
+.about-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 30px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Intro Section */
+.intro-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.intro-image img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  margin-bottom: 16px;
+}
+
+/* Card Section */
+.card-section {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.card {
+  background-color: #f8f8f8;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 240px;
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background-color: #ddd;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Campus Section */
+.campus-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.campus-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.campus-section p {
+  margin-bottom: 16px;
+}
+
+.campus-section blockquote {
+  font-style: italic;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-left: 4px solid #800000;
+  margin-top: 30px;
+  color: #555;
+}

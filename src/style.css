@@ -129,3 +129,58 @@
 .header-button:hover {
   background-color: #6B21A8;
 }
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  background-color: #fff;
+  gap: 30px;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.about-content {
+  max-width: 500px;
+}
+
+.about-text {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.about-link {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-link:hover {
+  text-decoration: underline;
+}
+
+.about-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-links ul li {
+  margin-bottom: 10px;
+}
+
+.about-links ul li a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.about-links ul li a:hover {
+  text-decoration: underline;
+}
