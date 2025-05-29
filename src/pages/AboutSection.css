@@ -1,98 +1,247 @@
-.about-container {
-  font-family: 'Segoe UI', sans-serif;
-  padding: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap');
+
+:root {
+  --primary-color: #0077cc;
+  --secondary-color: #333;
+  --background-color: #f9fbfd; /* lighter, soft background */
+  --card-bg: #fff;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background-color: var(--background-color);
+  color: var(--secondary-color);
   line-height: 1.6;
-  color: #333;
+}
+
+/* General page spacing */
+.about-container {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 /* Intro Section */
 .intro-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 2rem;
   align-items: center;
-  margin-bottom: 60px;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
 }
 
 .intro-image img {
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  object-fit: cover;
 }
 
 .intro-text {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
 }
 
 .intro-text h2 {
-  font-size: 2.2rem;
-  margin-bottom: 20px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 .intro-text p {
-  margin-bottom: 16px;
+  font-size: 1.15rem;
+  margin-bottom: 1.25rem;
+  color: #444;
+  letter-spacing: 0.02em;
 }
 
 /* Card Section */
 .card-section {
   display: flex;
-  gap: 20px;
-  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .card {
-  background-color: #f8f8f8;
-  padding: 30px 20px;
-  border-radius: 12px;
-  width: 240px;
-  text-align: center;
+  background: var(--card-bg);
+  width: 300px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
   text-decoration: none;
-  color: #222;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  color: var(--secondary-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  background-color: #ddd;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 119, 204, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .card-content h3 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
   font-size: 1.3rem;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
 }
 
 .card-content p {
-  color: #007bff;
-  font-weight: bold;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+}
+
+/* Mission Section */
+.mission-section {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 5rem;
+}
+
+.mission-image img {
+  width: 320px;
+  max-width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.mission-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.mission-text h2 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #444;
+  letter-spacing: 0.02em;
 }
 
 /* Campus Section */
 .campus-section {
-  max-width: 800px;
-  margin: 0 auto;
-  padding-top: 40px;
+  background-color: #f0f8ff; /* very light blue */
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  max-width: 1100px;
+  margin: 0 auto 5rem;
 }
 
-.campus-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
+.campus-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
-.campus-section p {
-  margin-bottom: 16px;
+.campus-left {
+  flex: 1 1 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
-.campus-section blockquote {
-  font-style: italic;
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-left: 4px solid #800000;
-  margin-top: 30px;
-  color: #555;
+.campus-box {
+  background-color: #fff;
+  padding: 1.6rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #333;
+  letter-spacing: 0.02em;
+}
+
+.campus-right {
+  flex: 1 1 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campus-right h2 {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-bottom: 0;
+  color: var(--primary-color);
+}
+
+.campus-highlight-box {
+  background-color: #0077cc;
+  color: #fff;
+  border-radius: var(--border-radius);
+  padding: 2rem 2.5rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+  box-shadow: 0 6px 20px rgba(0, 119, 204, 0.4);
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .intro-section,
+  .mission-section {
+    flex-direction: column;
+  }
+
+  .campus-container {
+    flex-direction: column;
+  }
+
+  .campus-left,
+  .campus-right {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-section {
+    justify-content: center;
+  }
 }

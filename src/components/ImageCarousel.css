@@ -1,0 +1,54 @@
+.carousel-container {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 10px;
+  text-align: center;
+  background-color: #f8f7f3;
+  border-radius: 10px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5a6534;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.arrow.left {
+  left: -40px;
+}
+
+.arrow.right {
+  right: -40px;
+}
+
+.dots {
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #5a6534;
+}
