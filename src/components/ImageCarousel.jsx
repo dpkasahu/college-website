@@ -1,45 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
+import Slider from "react-slick";
 import "./ImageCarousel.css";
 
-const images = [
-  "https://picsum.photos/800/400?random=1",
-  "https://picsum.photos/800/400?random=2",
-  "https://picsum.photos/800/400?random=3",
-  "https://picsum.photos/800/400?random=4",
-];
-
 const ImageCarousel = () => {
-  const [index, setIndex] = useState(0);
+  const images = [
+    {
+      url: "https://picsum.photos/800/400?random=11",
+      alt: "Campus View",
+    },
+    {
+      url: "https://picsum.photos/800/400?random=12",
+      alt: "Laboratory Facilities",
+    },
+    {
+      url: "https://picsum.photos/800/400?random=13",
+      alt: "Cultural Fest",
+    },
+    {
+      url: "https://picsum.photos/800/400?random=14",
+      alt: "Sports Ground",
+    },
+  ];
 
-  const prevSlide = () => {
-    setIndex(index === 0 ? images.length - 1 : index - 1);
-  };
-
-  const nextSlide = () => {
-    setIndex(index === images.length - 1 ? 0 : index + 1);
+  const settings = {
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    speed: 800,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    pauseOnHover: true,
   };
 
   return (
     <div className="carousel-container">
-      <button className="arrow left" onClick={prevSlide}>
-        &#8592;
-      </button>
-      <div className="carousel-slide">
-        <img src={images[index]} alt={`Slide ${index}`} />
-      </div>
-      <button className="arrow right" onClick={nextSlide}>
-        &#8594;
-      </button>
-
-      <div className="dots">
-        {images.map((_, i) => (
-          <span
-            key={i}
-            className={`dot ${i === index ? "active" : ""}`}
-            onClick={() => setIndex(i)}
-          />
+      <h2 className="carousel-heading">Campus Highlights</h2>
+      <Slider {...settings}>
+        {images.map((img, index) => (
+          <div key={index} className="carousel-slide">
+            <img src={img.url} alt={img.alt} loading="lazy" />
+          </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

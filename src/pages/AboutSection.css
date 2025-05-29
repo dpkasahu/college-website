@@ -3,7 +3,7 @@
 :root {
   --primary-color: #0077cc;
   --secondary-color: #333;
-  --background-color: #f9fbfd; /* lighter, soft background */
+  --background-color: #f9fbfd;
   --card-bg: #fff;
   --border-radius: 12px;
   --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
@@ -14,13 +14,12 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-primary);
+  font-family: var(--font-primary), Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--secondary-color);
   line-height: 1.6;
 }
 
-/* General page spacing */
 .about-container {
   padding: 3rem 2rem;
   max-width: 1200px;
@@ -30,7 +29,7 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-/* Intro Section */
+/* --- INTRO SECTION --- */
 .intro-section {
   display: flex;
   gap: 2rem;
@@ -67,7 +66,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Card Section */
+/* --- CARD SECTION --- */
 .card-section {
   display: flex;
   gap: 2rem;
@@ -102,7 +101,7 @@ body {
 }
 
 .card-content {
-  padding: 1rem 1rem;
+  padding: 1rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -125,7 +124,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-/* Mission Section */
+/* --- MISSION SECTION --- */
 .mission-section {
   display: flex;
   gap: 2.5rem;
@@ -162,9 +161,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Campus Section */
+/* --- CAMPUS SECTION --- */
 .campus-section {
-  background-color: #f0f8ff; /* very light blue */
+  background-color: #f0f8ff;
   padding: 2.5rem 2rem;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
@@ -223,7 +222,7 @@ body {
   line-height: 1.5;
 }
 
-/* Responsive adjustments */
+/* --- RESPONSIVE --- */
 @media (max-width: 1024px) {
   .intro-section,
   .mission-section {
