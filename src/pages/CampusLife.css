@@ -1,0 +1,103 @@
+/* Import a clean font (optional) */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #e0f2ff, #f7faff); /* Soft gradient */
+  color: #333;
+}
+
+.campus-page {
+  padding: 2rem 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: linear-gradient(to bottom right, #0c8eec, #edf0f5);
+}
+
+.campus-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.campus-header h1 {
+  font-size: 2.5rem;
+  color: #0a3d62;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.campus-header p {
+  font-size: 1.2rem;
+  color: #444;
+}
+
+/* Card style for each section */
+.campus-section {
+  background: #ffffff;
+  padding: 1.8rem;
+  margin: 2rem 0;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campus-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.campus-section h2 {
+  font-size: 1.6rem;
+  color: #0a3d62;
+  margin-bottom: 1rem;
+}
+
+.campus-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.campus-section ul {
+  padding-left: 1.5rem;
+  list-style-type: circle;
+}
+
+.campus-section li {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+  margin-top: 3rem;
+}
+
+.gallery-section h2 {
+  font-size: 1.6rem;
+  color: #0a3d62;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.image-grid img {
+  width: 300px;
+  height: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+}
