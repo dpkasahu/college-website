@@ -6,7 +6,7 @@ const Admissions = () => {
     <div className="admissions">
       <header className="aa-header">
         <h1>Admissions & Aid</h1>
-        <p>Adimissions into GIET University, Gunupur.</p>
+        <p>Admissions into GIET University, Gunupur.</p>
       </header>
 
       <section className="aa-section">
