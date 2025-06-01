@@ -41,7 +41,8 @@ const AboutPage = () => {
           </p>
           <p>
             Since its inception, GIET University has been at the forefront of
-            technological advancements and innovative teaching methods. With
+            technological advancements and innovative teaching methods. 
+            With
             state-of-the-art infrastructure and world-class facilities, the
             university strives to provide a disciplined and progressive
             education system.
