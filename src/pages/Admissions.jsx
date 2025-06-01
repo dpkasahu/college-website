@@ -1,5 +1,5 @@
 // src/components/AdmissionsAid.jsx
-// import './Admissions.css';
+import './Admissions.css';
 
 const Admissions = () => {
   return (

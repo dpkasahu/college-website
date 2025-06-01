@@ -17,10 +17,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/campus-life" element={<CampusLife />} />
-        {/* <Route path="/academics" element={<Academics />} />
+        {/* <Route path="/academics" element={<Academics />} /> */}
         <Route path="/admissions" element={<Admissions />} />
         
-        <Route path="/give" element={<Give />} />
+        {/* <Route path="/give" element={<Give />} />
         <Route path="/apply" element={<Apply />} /> */}
       </Routes>
     </Router>

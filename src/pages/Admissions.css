@@ -1,0 +1,44 @@
+/* src/components/AdmissionsAid.css */
+.admissions-aid {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #fefefc;
+  color: #333;
+}
+
+.aa-header {
+  background-color: #004643;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.aa-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+}
+
+.aa-section h2 {
+  color: #004643;
+  margin-bottom: 1rem;
+}
+
+.aa-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.contact {
+  background-color: #d4e9e2;
+}
+
+.aa-footer {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+}
