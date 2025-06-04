@@ -1,34 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer'; // ✅ import Footer here
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import CampusLife from './pages/CampusLife';
-
-
-
+import Admissions from './pages/Admissions';
 // import Academics from './pages/Academics';
-// import Admissions from './pages/Admissions';
 // import Give from './pages/Give';
 // import Apply from './pages/Apply';
 
 function App() {
   return (
     <Router>
-<<<<<<< HEAD
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/campus-life" element={<CampusLife />} />
-        {/* <Route path="/academics" element={<Academics />} /> */}
-        <Route path="/admissions" element={<Admissions />} />
-        
-        {/* <Route path="/give" element={<Give />} />
-        <Route path="/apply" element={<Apply />} /> */}
-      </Routes>
-=======
       <div className="flex flex-col min-h-screen">
         <Navbar />
         
@@ -37,18 +21,15 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/campus-life" element={<CampusLife />} />
-             
-             
-            {/* <Route path="/academics" element={<Academics />} />
             <Route path="/admissions" element={<Admissions />} />
-            <Route path="/give" element={<Give />} />
-            <Route path="/apply" element={<Apply />} /> */}
+            {/* <Route path="/academics" element={<Academics />} /> */}
+            {/* <Route path="/give" element={<Give />} /> */}
+            {/* <Route path="/apply" element={<Apply />} /> */}
           </Routes>
         </div>
-        
+
         <Footer />
       </div>
->>>>>>> ad8edfe16f2c318698f19c520f07efd2c6178f1d
     </Router>
   );
 }
