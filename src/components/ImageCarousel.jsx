@@ -5,19 +5,19 @@ import "./ImageCarousel.css";
 const ImageCarousel = () => {
   const images = [
     {
-      url: "https://picsum.photos/800/400?random=11",
+      url: "https://www.giet.edu/wp-content/uploads/2020/02/campus-view.jpg",
       alt: "Campus View",
     },
     {
-      url: "https://picsum.photos/800/400?random=12",
+      url: "https://giet.edu/wp-content/uploads/2020/03/why-giet1.jpg",
       alt: "Laboratory Facilities",
     },
     {
-      url: "https://picsum.photos/800/400?random=13",
+      url: "https://www.giet.edu/wp-content/uploads/2021/01/why-gietu-placement.jpg",
       alt: "Cultural Fest",
     },
     {
-      url: "https://picsum.photos/800/400?random=14",
+      url: "https://www.giet.edu/wp-content/uploads/2021/01/campus-overview-on-hill.jpg",
       alt: "Sports Ground",
     },
   ];

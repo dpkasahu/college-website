@@ -1,0 +1,96 @@
+/* src/pages/GietuAnthem.css */
+
+.anthem-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #1f2674;
+  text-transform: uppercase;
+  border-bottom: 3px solid #f58634;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.anthem-container {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f2ef;
+  border: 6px solid #1f2674;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.anthem-left {
+  flex: 1;
+  padding: 2rem;
+  min-width: 300px;
+  background-color: #f4f2ef;
+}
+
+.anthem-content p {
+  font-size: 1rem;
+  line-height: 2;
+  margin-bottom: 1.5rem;
+  font-family: 'Noto Serif Oriya', serif;
+  color: #222;
+}
+
+.anthem-right {
+  flex: 1;
+  background-color: #1f2674;
+  padding: 2rem;
+  text-align: center;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+audio {
+  width: 100%;
+  max-width: 450px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.anthem-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anthem-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.image-gallery img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.4);
+}
