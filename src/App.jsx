@@ -10,8 +10,7 @@ import StudentAchievementsPage from "./pages/StudentAchievementsPage";
 import AccreditationPage from "./pages/AccreditationPage";
 import EmploymentPage from "./pages/EmploymentPage";
 // import Academics from './pages/Academics';
-// import Give from './pages/Give';
-// import Apply from './pages/Apply';
+
 
 function App() {
   return (
