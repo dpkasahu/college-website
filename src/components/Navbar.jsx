@@ -17,7 +17,7 @@ const Navbar = () => {
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     {/* <li><a href="/academics">Academics</a></li> */}
-    <li><a href="/admissions">Admissions & Aid</a></li>
+    <li><a href="/admissions">Admissions</a></li>
     <li><a href="/campus-life">Campus Life</a></li>
     {/* <li><a href="/give">Give</a></li>
     <li><a href="/apply">Apply</a></li> */}

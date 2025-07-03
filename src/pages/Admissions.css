@@ -1,4 +1,4 @@
-.admissions-aid {
+/* .admissions-aid {
   font-family: Arial, sans-serif;
   padding: 2rem;
   background: #fefefc;
@@ -40,4 +40,98 @@
   color: #666;
   padding-top: 1rem;
   border-top: 1px solid #ccc;
+} */
+
+.admission-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  background-color: #fff;
+  line-height: 1.7;
+}
+
+.title {
+  font-size: 2rem;
+  color: #2c3e50;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.intro {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.steps,
+.offline {
+  padding-left: 1.5rem;
+}
+
+.steps li,
+.offline li {
+  margin-bottom: 0.75rem;
+}
+
+.checklist-box {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-left: 5px solid #007bff;
+  border-radius: 4px;
+}
+
+.checklist-box ul {
+  padding-left: 1.5rem;
+}
+
+.contact {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+address {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  border-left: 4px solid #333;
+  margin-top: 1rem;
+  font-style: normal;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .admission-container {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .checklist-box,
+  address {
+    padding: 1rem;
+  }
 }
